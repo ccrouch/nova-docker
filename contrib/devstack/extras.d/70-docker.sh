@@ -49,7 +49,7 @@ if [[ $VIRT_DRIVER == "docker" ]]; then
     fi
 
     # Start the daemon - restart just in case the package ever auto-starts...
-    restart_service docker
+    #restart_service docker
 
     echo "Waiting for docker daemon to start..."
     DOCKER_GROUP=$(groups | cut -d' ' -f1)
